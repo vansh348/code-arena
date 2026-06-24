@@ -102,7 +102,6 @@ export default function ProblemDetail() {
   if (loading) return <div className="loading-screen"><div className="spinner" /></div>;
   if (!problem) return null;
 
-  // const diffColor = { Easy: 'var(--easy)', Medium: 'var(--medium)', Hard: 'var(--hard)' }[problem.difficulty];
   const isSolved = user?.solved?.includes(problem._id);
 
   return (
