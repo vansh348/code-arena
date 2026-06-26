@@ -37,20 +37,20 @@ export default function Landing() {
       <section style={{ position: 'relative', overflow: 'hidden', padding: '6rem 2rem 5rem', textAlign: 'center' }}>
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'radial-gradient(ellipse 70% 50% at 50% -10%, rgba(109,40,217,0.2), transparent)',
+          background: 'radial-gradient(ellipse 70% 50% at 50% -10%, rgba(37,99,235,0.12), transparent)',
           pointerEvents: 'none'
         }} />
         <div style={{
           position: 'absolute', inset: 0,
-          backgroundImage: 'linear-gradient(rgba(37,37,55,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(37,37,55,0.4) 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px)',
           backgroundSize: '60px 60px', pointerEvents: 'none', opacity: 0.4
         }} />
         <div style={{ position: 'relative', maxWidth: 720, margin: '0 auto' }}>
           <div style={{
             display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-            background: 'rgba(109,40,217,0.12)', border: '1px solid rgba(109,40,217,0.3)',
+            background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.2)',
             borderRadius: 9999, padding: '0.3rem 1rem',
-            fontSize: '0.78rem', color: 'var(--accent3)', fontWeight: 600,
+            fontSize: '0.78rem', color: 'var(--accent)', fontWeight: 600,
             marginBottom: '1.75rem', letterSpacing: '0.04em'
           }}>
             ⚔️ COMPETITIVE CODING PLATFORM
@@ -59,11 +59,11 @@ export default function Landing() {
           <h1 style={{
             fontSize: 'clamp(2.4rem, 6vw, 4.25rem)',
             fontWeight: 900, lineHeight: 1.08, letterSpacing: '-0.03em',
-            marginBottom: '1.25rem', color: '#f1f5f9'
+            marginBottom: '1.25rem', color: 'var(--text)'
           }}>
             Level Up Your{' '}
             <span style={{
-              background: 'linear-gradient(135deg, #8b5cf6, #a78bfa, #c4b5fd)',
+              background: 'linear-gradient(135deg, #2563eb, #3b82f6, #60a5fa)',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'
             }}>
               Coding Skills
@@ -96,7 +96,7 @@ export default function Landing() {
             { val: '24/7', label: 'Judge Online' },
           ].map(s => (
             <div key={s.label} className="card" style={{ textAlign: 'center', padding: '1.5rem 1rem', background: 'var(--bg2)', border: '1px solid var(--border)' }}>
-              <div style={{ fontSize: '2.2rem', fontWeight: 800, color: 'var(--accent3)', lineHeight: 1 }}>{s.val}</div>
+              <div style={{ fontSize: '2.2rem', fontWeight: 800, color: 'var(--accent)', lineHeight: 1 }}>{s.val}</div>
               <div style={{ fontSize: '0.8rem', color: 'var(--muted)', marginTop: '0.4rem' }}>{s.label}</div>
             </div>
           ))}
@@ -106,7 +106,7 @@ export default function Landing() {
       {/* FEATURES */}
       <section style={{ padding: '2rem 2rem 5rem', maxWidth: 1100, margin: '0 auto' }}>
         <p style={{ textAlign: 'center', color: 'var(--muted)', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.75rem', fontWeight: 600 }}>Everything you need</p>
-        <h2 style={{ textAlign: 'center', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, marginBottom: '3rem', color: '#f1f5f9' }}>
+        <h2 style={{ textAlign: 'center', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, marginBottom: '3rem', color: 'var(--text)' }}>
           Built for serious coders
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '1.25rem' }}>
@@ -115,11 +115,11 @@ export default function Landing() {
               style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
               <div style={{
                 width: 44, height: 44, borderRadius: 10, flexShrink: 0,
-                background: 'rgba(109,40,217,0.15)', border: '1px solid rgba(109,40,217,0.25)',
+                background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.2)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.3rem'
               }}>{f.icon}</div>
               <div>
-                <h3 style={{ fontWeight: 700, marginBottom: '0.35rem', fontSize: '0.95rem' }}>{f.title}</h3>
+                <h3 style={{ fontWeight: 700, marginBottom: '0.35rem', fontSize: '0.95rem', color: 'var(--text)' }}>{f.title}</h3>
                 <p style={{ color: 'var(--muted)', fontSize: '0.83rem', lineHeight: 1.65 }}>{f.desc}</p>
               </div>
             </div>
@@ -131,10 +131,10 @@ export default function Landing() {
       <section style={{ padding: '3rem 2rem 6rem', textAlign: 'center' }}>
         <div style={{
           maxWidth: 580, margin: '0 auto',
-          background: 'linear-gradient(135deg, rgba(109,40,217,0.12), rgba(139,92,246,0.06))',
-          border: '1px solid rgba(109,40,217,0.25)', borderRadius: 20, padding: '3rem 2rem'
+          background: 'linear-gradient(135deg, rgba(37,99,235,0.08), rgba(59,130,246,0.04))',
+          border: '1px solid rgba(37,99,235,0.2)', borderRadius: 20, padding: '3rem 2rem'
         }}>
-          <h2 style={{ fontSize: '1.85rem', fontWeight: 800, marginBottom: '0.75rem' }}>Ready to compete?</h2>
+          <h2 style={{ fontSize: '1.85rem', fontWeight: 800, marginBottom: '0.75rem', color: 'var(--text)' }}>Ready to compete?</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '2rem', lineHeight: 1.7 }}>
             Join CodeArena today. It's free, fast, and your next interview might depend on it.
           </p>
