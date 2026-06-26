@@ -1,4 +1,4 @@
-
+cat > /home/claude/seed.js << 'SEEDEOF'
 /**
  * Seed script — run once: node seed.js
  * Creates demo users + 100 LeetCode-style problems
